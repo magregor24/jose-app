@@ -1,0 +1,16 @@
+.footer {
+
+
+	width: 100%;
+	background: black;
+	opacity: .8;
+	padding: 40px;
+	color: white;
+	font-family: Verdana;
+	position: absolute;
+
+	align-content: flex-end;
+	justify-content: flex-end;
+	
+
+}
