@@ -31,7 +31,7 @@ class Card extends React.Component {
 				  				<div className="card card2">
 								  <div className="card-body">
 								    <h5 className="card-title title">{ ele.nombre}</h5>
-								    <img src={ele.img} className="img-thumbnail"/>
+								    <img src={ele.img} className='img-thumbnail' />
 								    <Link to="/play" className="btn btn-primary card-link mt-4">Ver Trailer</Link>
 								   </div>
 

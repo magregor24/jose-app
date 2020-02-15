@@ -7,11 +7,15 @@ import NoFound from '../pages/NoFound'
 
 const App = () => (
 
+				
 			<BrowserRouter>
 
 				<Switch> 
+
+					<Route component={Pelis} />
 					<Route  path="/Pelis" component={Pelis} />
 					<Route  path="/Play" component={Play} />
+
 					<Route component={NoFound} />
 				</Switch>
 
