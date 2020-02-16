@@ -3,7 +3,6 @@ import Menu from '../componentes/Menu'
 import Footer from '../componentes/Footer'
 import Reproductor from '../componentes/Reproductor'
 import { Link } from 'react-router-dom'
-import maluma from '../img/maluma.mp4'
 
 
 class Play extends React.Component {
