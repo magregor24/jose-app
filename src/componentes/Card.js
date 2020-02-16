@@ -10,6 +10,8 @@ class Card extends React.Component {
 	 	await fetch("http://localhost/API/document.php")
 	 	.then(js => js.json())
 	 	.then(ele =>{
+
+	 		console.log(ele);
 	 		let pelis = ele
 	 		this.setState({pelis})
 	 	})
@@ -26,13 +28,14 @@ class Card extends React.Component {
 
 				  {
 				  	this.state.pelis.map(ele =>{
+				  		console.log(ele);
 				  		
 				  		return(
 				  				<div className="card card2">
 								  <div className="card-body">
-								    <h5 className="card-title title">{ ele.nombre}</h5>
+								    <h5 className="card-title title">{ele.nombre}</h5>
 								    <img src={ele.img} className='img-thumbnail' />
-								    <Link to="/play" className="btn btn-primary card-link mt-4">Ver Trailer</Link>
+								    <Link to={`/play/${ele.nombre}`} className="btn btn-primary card-link mt-4">Ver Trailer</Link>
 								   </div>
 
 								</div>

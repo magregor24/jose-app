@@ -14,9 +14,9 @@ const App = () => (
 
 					<Route  exact path='/' component={Pelis} />
 					<Route  path="/Pelis" component={Pelis} />
-					<Route  path="/Play" component={Play} />
-
+					<Route  path="/Play/:nombre" component={Play} />
 					<Route component={NoFound} />
+					
 				</Switch>
 
 			</BrowserRouter>

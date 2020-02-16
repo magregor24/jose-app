@@ -3,7 +3,7 @@ import Menu from '../componentes/Menu'
 import Footer from '../componentes/Footer'
 import Reproductor from '../componentes/Reproductor'
 import { Link } from 'react-router-dom'
-
+import maluma from '../img/maluma.mp4'
 
 
 class Play extends React.Component {
@@ -23,6 +23,7 @@ class Play extends React.Component {
 
 	render(){
 
+		const {match} = this.props;
 
 		return (
 
@@ -36,7 +37,12 @@ class Play extends React.Component {
 						<div className='row'>
 
 							<div className='col-md-6'>
-								<h2>Haz click y disfruta de la peli</h2>
+								<h2>Haz click y disfruta de la peli {match.params.nombre} </h2>
+								<video width='500' height='300' controls>
+
+									<source src={`http://localhost/FrameJose/videos/${match.params.nombre}.mp4`} type="video/mp4" />
+
+								 </video>
 							</div>
 
 							<div className='col-md-6'>
