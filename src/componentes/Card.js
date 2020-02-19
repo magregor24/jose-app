@@ -11,7 +11,6 @@ class Card extends React.Component {
 	 	.then(js => js.json())
 	 	.then(ele =>{
 
-	 		console.log(ele);
 	 		let pelis = ele
 	 		this.setState({pelis})
 	 	})
@@ -27,18 +26,20 @@ class Card extends React.Component {
 	 
 
 				  {
-				  	this.state.pelis.map(ele =>{
-				  		console.log(ele);
-				  		
+				  	this.state.pelis.map((ele) =>{
+
 				  		return(
-				  				<div className="card card2">
+				  				<div className="card card2" key={ele.id}>
+				  					
 								  <div className="card-body">
 								    <h5 className="card-title title">{ele.nombre}</h5>
-								    <img src={ele.img} className='img-thumbnail' />
-								    <Link to={`/play/${ele.nombre}`} className="btn btn-primary card-link mt-4">Ver Trailer</Link>
+								    <img src={ele.img} className="img-thumbnail" alt="" />
+								    <Link to={'/play/'+ele.nombre} className="btn btn-primary card-link mt-4">Ver Pelicula</Link>
 								   </div>
 
 								</div>
+								
+							
 							   )
 				  	})
 

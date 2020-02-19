@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../componentes/Card'
 import Menu from '../componentes/Menu'
+import Cubo from '../componentes/Cubo'
 
 
 class Pelis extends React.Component {
@@ -13,6 +14,8 @@ class Pelis extends React.Component {
 			<div>
 
 				<Menu />
+
+				<Cubo  />
 				
 				
 				<Card /> 
