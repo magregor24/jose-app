@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/Card.css'
+import './css/Cubo.css'
 import img from '../img/whitcher.jpeg'
 import img2 from '../img/4.png'
 
@@ -30,4 +30,4 @@ class Cubo  extends  React.Component {
 
 }
 
-export default Card
+export default Cubo
