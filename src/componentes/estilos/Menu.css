@@ -1,12 +1,27 @@
 .menu {
 
-	background: black;
+	background: black !important;
 	color:white;
+	height: 70px !important;
 
 }
 
 .menu a{
 
-	color:white;
+	color:white !important;
 
+}
+
+
+.nav2{
+	background: black !important;
+	
+}
+
+.nav2 a {
+	color: white !important;
+}
+
+.nav2 a:hover {
+	color: black !important;
 }
