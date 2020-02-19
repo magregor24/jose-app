@@ -7,7 +7,7 @@ class Card extends React.Component {
 	 state = {pelis:[]}
 
 	 async componentDidMount(){
-	 	await fetch("http://localhost/API/document.php")
+	 	await fetch("http://portend.com.ve/api_camico/document.php")
 	 	.then(js => js.json())
 	 	.then(ele =>{
 
